@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OnlyGames Marketplace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; background: #1a1a2e; color: #dadada; margin: 0; }
+    header { background: #16213e; padding: 20px; text-align: center; }
+    nav { margin: 10px 0; text-align: center; }
+    nav a { color: #ffbe76; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .container { max-width: 1200px; margin: 20px auto; padding: 15px;}
+    .products { display: flex; flex-wrap: wrap; gap: 20px; }
+    .product { background: #0f3460; border-radius: 10px; padding: 15px; flex: 1 1 220px; min-width: 220px;}
+    .product img { width: 100%; border-radius: 5px;}
+    .dashboard { background: #e94560; color: #fff; padding: 20px; border-radius: 10px; margin-top: 30px;}
+    button { background: #ffbe76; color: #0f3460; border: none; padding: 10px 18px; border-radius: 8px; cursor: pointer; }
+    footer { background: #16213e; text-align: center; padding: 15px 0; margin-top: 40px; }
+    @media(max-width:800px) {
+      .products { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OnlyGames Marketplace</h1>
+    <nav>
+      <a href="#products">Shop Games</a>
+      <a href="#dashboard">Creator Dashboard</a>
+      <a href="#community">Community</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="products">
+      <h2>Featured Games & Miniatures</h2>
+      <div class="products">
+        <div class="product">
+          <img src="miniature1.jpg" alt="Miniature 1">
+          <h3>Dragon Knight Miniature</h3>
+          <p>High-detail fantasy miniature for tabletop and RPGs.</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="cardgame1.jpg" alt="Card Game">
+          <h3>Epic Card Game Set</h3>
+          <p>50 custom cards, exclusive expansion edition.</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="dice-set.jpg" alt="Dice Set">
+          <h3>Custom Dice Set</h3>
+          <p>Unique polyhedral dice for games and collections.</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="dashboard">
+      <h2>Creator Dashboard</h2>
+      <form>
+        <label>
+          Add New Product:
+          <input type="text" placeholder="Product Name">
+        </label>
+        <br><br>
+        <label>
+          Upload Image:
+          <input type="file">
+        </label>
+        <br><br>
+        <label>
+          Description:
+          <textarea rows="3" placeholder="Describe your product"></textarea>
+        </label>
+        <br><br>
+        <button type="submit">Submit Product</button>
+      </form>
+      <h3>Your Recent Sales</h3>
+      <ul>
+        <li>Miniature Pack - 5 Sold</li>
+        <li>Custom Dice - 2 Sold</li>
+      </ul>
+    </section>
+    
+    <section id="community">
+      <h2>Community Forum</h2>
+      <p>Connect with other creators and gamers. Share tips, ask questions, discuss game strategies!</p>
+      <button>Join Discussion</button>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 OnlyGames All rights reserved.
+  </footer>
+</body>
+</html>
